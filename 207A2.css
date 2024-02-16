@@ -1,0 +1,460 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-padding:2rem;
+    scroll-behavior:smooth;
+    list-style:none;
+    text-decoration:none;
+}
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index:1000;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:rgb(244, 243, 243);
+    padding:10px 200px;
+}
+
+.logo img{
+    width:70;
+    height:70;
+}
+.navbar{
+    display:flex;
+}
+.navbar li{
+    position: relative;
+    padding:0px 40px;
+}
+.navbar a{
+    font-size: 1.1rem;
+    padding:8px;
+    color: rgb(49, 47, 47);
+}
+
+.navbar a::after{
+    content:" ";
+    width:0;
+    height:3;
+    background-color:#0B4291;
+    position:absolute;
+    bottom:-4px;
+    left: 45px;
+    transition:0.5s;
+}
+.navbar a:hover::after{
+    width:40%;
+}
+
+.header-btn a{
+    padding:10px 15px;
+}
+.signIn{
+    background-color: navy;
+    color:whitesmoke;  
+    border-radius: 20px;  
+}
+
+.signIn:hover{
+    background-color: orange;
+}
+
+.home{
+    width:100%;
+    padding-left: 10%;
+    padding-right:5%;
+    display:grid;
+    min-height:95vh;
+    position:relative;
+    align-items:center;
+    grid-template-columns:repeat(2, 1fr);
+    background: linear-gradient(to top, whitesmoke,  rgb(112, 156, 212));
+}
+img{
+    padding-top:7%;
+   
+}
+.text h1{
+    font-size:4rem;
+    letter-spacing:2px;
+}
+
+.text span{
+    color:#0B4291;
+}
+.text p{
+    margin:00.5rem 0 1rem;
+}
+
+
+.form-container form{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items:center;
+    gap:1.2rem;
+    position:absolute;
+    bottom:7rem;
+    background: linear-gradient(to right,rgb(112, 156, 212),whitesmoke);
+    padding:30px;
+    padding-left:400px;
+    padding-right: 400px;
+    border-radius:20px;
+}
+.form-container .input-box{
+    display:flex;
+    flex:1 1 7rem;
+    flex-direction: column;
+}
+
+.form-container .input-box input{
+    padding:5px;
+    outline:none;
+    border:none;
+    background:#eeeff1;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.form-container .input-box select{
+    padding:5px;
+    outline:none;
+    border:none;
+    background:#eeeff1;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.form-container .btn{
+    padding: 10px 20px;
+    border-radius:10px;
+    background-color: #0B4291;
+    color:white;
+}
+.form-container .btn:hover{
+    background-color: white;
+    color:black;
+}
+
+
+
+.rent{
+    background-color: whitesmoke;
+}
+.rent .heading{
+    text-align: center;
+}
+.rent .heading span{
+    font-size: 1.5rem;
+}
+.rent .heading h1{
+    font-size:3rem;
+}
+.rent-container{
+    display:grid;
+    padding-left: 350px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 70px;
+}
+.rent-container .box .bx{
+    font-size: 34px;
+    padding:10px;
+    background-color: #eeeff1;
+    border-radius: 0.5rem;
+    color: #0B4291;
+}
+.rent-container .box .bx:hover{
+    background-color: orange;
+    color:white;
+}
+
+
+
+.services{
+    background:linear-gradient(to top, whitesmoke, rgb(249, 210, 138));
+}
+.services .heading{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.services .heading span{
+    font-size: 1.5rem;
+}
+.services .heading h1{
+    font-size:3rem;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.services-container .box{
+    background-color: whitesmoke;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+    box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
+    border-radius: 1rem;
+}
+.services-container .box .box-img1 img{
+    width:350px;
+    height: 230px;
+}
+
+.services-container .box .box-img2 img{
+    width:350px;
+    height: 230px;
+}
+
+.services-container .box .box-img3 img{
+    width:350px;
+    height: 230px;
+}
+.services-container .box .box-img4 img{
+    width:380px;
+    height: 270px;
+}
+.services-container .box .box-img5 img{
+    width:350px;
+    height: 250px;
+}
+.services-container .box .box-img6 img{
+    width:350px;
+    height: 250px;
+}
+.services-container .box h3{
+    color:orange;
+    font-size: 1.2rem;
+}
+.services-container .box h3 span{
+    color:black;
+    font-size: 1rem;
+}
+.services-container .box .btn{
+    display:flex;
+    justify-content: center;
+    background-color: #2257a1;
+    color:white;
+    padding:7px;
+    padding-left:200px;
+    padding-right:200px;
+    margin-bottom: 7px;
+    border-radius: 0.5rem;
+}
+.services-container .box .btn:hover{
+    background-color: rgb(247, 179, 53);
+    color:black;
+}
+
+.about{
+    background: linear-gradient(to bottom, rgb(112, 156, 212),whitesmoke);
+}
+.about .heading{
+    text-align: center;
+    padding-top: 50px;
+}
+.about .heading span{
+    font-size: 1.5rem;
+}
+.about .heading h1{
+    font-size: 3rem;
+}
+.about-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 50px;
+    padding-right:50px;
+    align-items: center;
+    gap:1rem;
+}
+.about-img img{
+    width:95%;
+}
+.about-text span{
+    color:black;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.about-text p{
+    margin:0.5rem 0 1.2rem;
+}
+.about-text .btn{
+    padding:10px 20px;
+    background:#2257a1;
+    color:white;
+    border-radius: 0.5rem;
+}
+.about-text .btn:hover{
+    background-color: orange;
+}
+
+
+.reviews{
+    background-color: whitesmoke;
+    padding-top: 50px;
+}
+.reviews .heading{
+    text-align: center;
+}
+.reviews .heading span{
+    font-size: 1.5rem;
+}
+.reviews .heading h1{
+    font-size: 3rem;
+}
+.rev-img1 img{
+   width:10%;
+}
+.rev-img2 img{
+    width:15%;
+    
+}
+.rev-img3 img{
+    width:15%;
+    
+}
+.review-container{
+   
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    align-items: center;
+    gap:1rem;
+    justify-content: space-between;
+}
+.review-container .box{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding:20px;
+    border-radius: 0.5rem;
+    box-shadow: 1px 4px 41px rgba(0,0,0,0.1);
+}
+.review-container .box p{
+    font-style: italic;
+}
+.review-container .box .stars{
+    color:orange;
+}
+
+
+.contact{
+    background-color: whitesmoke;
+}
+.contact .heading{
+    padding-top: 30px;
+}
+
+
+.copyright{
+    padding:20px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+/* Styles for modal dialog */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+
+
+
+.car1dialog {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.car1dialog-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: left;
+    border-radius: 10px;
+}
+.car1dialog-content button:hover{
+    background-color: #2257a1;
+    color: white;
+}
+
+
+
+.returnCar{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.returnCar-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 30%;
+    text-align: left;
+    border-radius: 10px;
+}
+.returnCar-content button:hover{
+    background-color: #2257a1;
+    color: white;
+}
